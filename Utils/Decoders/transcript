@@ -1,40 +1,49 @@
-# vsim work.tb_UnpackerMaster 
-# Start time: 12:48:50 on Nov 14,2024
+# OpenFile limit_tb.sv
+vsim work.limit_tb
+# vsim work.limit_tb 
+# Start time: 22:04:05 on Nov 27,2024
 # Loading sv_std.std
-# Loading work.tb_UnpackerMaster
-# Loading work.UnpackerMaster
-# Loading work.exponent
-# Loading work.Unpacker
-# Loading work.leadingzero
-# Loading work.CLS
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (6) for port 'y'. The port definition is at: leadingzero.sv(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_UnpackerMaster/uut/unpacker_inst/leadingzero_inst File: Unpacker.sv Line: 27
+# Loading work.limit_tb
+# Loading work.limit
+# Loading work.ortree
 add wave -position insertpoint  \
-sim:/tb_UnpackerMaster/fp \
-sim:/tb_UnpackerMaster/db \
-sim:/tb_UnpackerMaster/normal \
-sim:/tb_UnpackerMaster/e_inf \
-sim:/tb_UnpackerMaster/e_z \
-sim:/tb_UnpackerMaster/e \
-sim:/tb_UnpackerMaster/s \
-sim:/tb_UnpackerMaster/lz \
-sim:/tb_UnpackerMaster/f \
-sim:/tb_UnpackerMaster/fz \
-sim:/tb_UnpackerMaster/h
+sim:/limit_tb/N \
+sim:/limit_tb/as \
+sim:/limit_tb/eb_gt_ea \
+sim:/limit_tb/as2 \
+sim:/limit_tb/i
 run
-# Test Case 1:
-# fp: 0000000000000000000000000000000000000000000000000000000000000000, e_inf: 0, e_z: 1, e: 10000000010, s: 0, lz: 110100, f: 00000000000000000000000000000000000000000000000000000, fz: 1, h: 0000000000000000000000000000000000000000000000000000
-# Test Case 2:
-# fp: 0011111111110000000000000000000000000000000000000000000000000000, e_inf: 0, e_z: 0, e: 00000000000, s: 0, lz: 000000, f: 11110000000000000000000000000000000000000000000000000, fz: 0, h: 1110000000000000000000000000000000000000000000000000
-# Test Case 3:
-# fp: 1011111111110000000000000000000000000000000000000000000000000000, e_inf: 0, e_z: 0, e: 00000000000, s: 1, lz: 110100, f: 01000000000000000000000000000000000000000000000000000, fz: 1, h: 0000000000000000000000000000000000000000000000000000
-# Test Case 4:
-# fp: 0111111111110000000000000000000000000000000000000000000000000000, e_inf: 1, e_z: 0, e: 11110000000, s: 0, lz: 000000, f: 11110000000000000000000000000000000000000000000000000, fz: 0, h: 1110000000000000000000000000000000000000000000000000
-# Test Case 5:
-# fp: 0000000000000000000000000000000000000000000000000000000000000000, e_inf: 0, e_z: 1, e: 10000000010, s: 0, lz: 110100, f: 00000000000000000000000000000000000000000000000000000, fz: 1, h: 0000000000000000000000000000000000000000000000000000
-# ** Note: $finish    : tb_UnpackerMaster.sv(83)
-#    Time: 90 ps  Iteration: 0  Instance: /tb_UnpackerMaster
-# 1
-# Break in Module tb_UnpackerMaster at tb_UnpackerMaster.sv line 83
-# End time: 13:00:41 on Nov 14,2024, Elapsed time: 0:11:51
-# Errors: 0, Warnings: 1
+# Time=0 | as=00000000000 (   0) eb_gt_ea=0 | as2=000000 ( 0)
+# Time=10 | as=00000000001 (   1) eb_gt_ea=1 | as2=111111 (63)
+# Time=20 | as=00000000010 (   2) eb_gt_ea=1 | as2=111101 (61)
+# Time=30 | as=00000000011 (   3) eb_gt_ea=1 | as2=111101 (61)
+# Time=40 | as=00000000100 (   4) eb_gt_ea=1 | as2=111011 (59)
+# Time=50 | as=00000000101 (   5) eb_gt_ea=1 | as2=111011 (59)
+# Time=60 | as=00000000110 (   6) eb_gt_ea=1 | as2=111001 (57)
+# Time=70 | as=00000000111 (   7) eb_gt_ea=0 | as2=000111 ( 7)
+# Time=80 | as=00000001000 (   8) eb_gt_ea=1 | as2=110111 (55)
+# Time=90 | as=00000001001 (   9) eb_gt_ea=1 | as2=110111 (55)
+run
+# Time=100 | as=00000001010 (  10) eb_gt_ea=0 | as2=001010 (10)
+# Time=110 | as=00000001011 (  11) eb_gt_ea=1 | as2=110101 (53)
+# Time=120 | as=00000001100 (  12) eb_gt_ea=1 | as2=110011 (51)
+# Time=130 | as=00000001101 (  13) eb_gt_ea=0 | as2=001101 (13)
+# Time=140 | as=00000001110 (  14) eb_gt_ea=1 | as2=110001 (49)
+# Time=150 | as=00000001111 (  15) eb_gt_ea=0 | as2=001111 (15)
+# Time=160 | as=00000010000 (  16) eb_gt_ea=1 | as2=101111 (47)
+# Time=170 | as=00000010001 (  17) eb_gt_ea=0 | as2=010001 (17)
+# Time=180 | as=00000010010 (  18) eb_gt_ea=1 | as2=101101 (45)
+# Time=190 | as=00000010011 (  19) eb_gt_ea=1 | as2=101101 (45)
+run
+# Time=200 | as=00000010100 (  20) eb_gt_ea=0 | as2=010100 (20)
+# Time=210 | as=00000010101 (  21) eb_gt_ea=1 | as2=101011 (43)
+# Time=220 | as=00000010110 (  22) eb_gt_ea=0 | as2=010110 (22)
+# Time=230 | as=00000010111 (  23) eb_gt_ea=0 | as2=010111 (23)
+# Time=240 | as=00000011000 (  24) eb_gt_ea=0 | as2=011000 (24)
+# Time=250 | as=00000011001 (  25) eb_gt_ea=1 | as2=100111 (39)
+# Time=260 | as=00000011010 (  26) eb_gt_ea=0 | as2=011010 (26)
+# Time=270 | as=00000011011 (  27) eb_gt_ea=1 | as2=100101 (37)
+# Time=280 | as=00000011100 (  28) eb_gt_ea=1 | as2=100011 (35)
+# Time=290 | as=00000011101 (  29) eb_gt_ea=1 | as2=100011 (35)
+# End time: 22:05:02 on Nov 27,2024, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 0

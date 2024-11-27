@@ -1,8 +1,8 @@
 module HDec #(
     parameter N = 2
 )(
-    input  logic [N-1:0] x, 
-    output logic [2**N-1:0] y  
+    input [N-1:0] x, 
+    output [2**N-1:0] y  
 );
 
     generate

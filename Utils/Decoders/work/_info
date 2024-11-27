@@ -9,58 +9,58 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/zura/Desktop/Thesis/Utils/Decoders
-vCLS
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1731574124
-!i10b 1
-!s100 SIIz:_Fh;Fb=;TYjmT>NJ2
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IW6Rd7j]ZK[ZcJ4UKLC`DF1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-S1
-R0
-w1731518649
-8CLS.sv
-FCLS.sv
-!i122 141
-Z5 L0 1 12
-Z6 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z7 !s108 1731574124.000000
-Z8 !s107 tb_UnpackerMaster.sv|UnpackerMaster.sv|exponent.sv|Unpacker.sv|leadingzero.sv|CLS.sv|
-Z9 !s90 CLS.sv|leadingzero.sv|Unpacker.sv|exponent.sv|UnpackerMaster.sv|tb_UnpackerMaster.sv|
-!i113 1
-Z10 tCvgOpt 0
-n@c@l@s
 vcls
-R1
-Z11 !s110 1731599018
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1731599018
 !i10b 1
 !s100 _30i7CWP]9`@Yn:aJ`@ZA3
-R3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I1e_ERjjL^C:?K6K?<Q:8W3
-R4
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1731583764
 8cls.sv
 Fcls.sv
 !i122 145
+Z5 L0 1 12
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1731599017.000000
+Z8 !s107 tb_unpackermaster.sv|unpackermaster.sv|exponent.sv|significand.sv|leadingzero.sv|cls.sv|
+Z9 !s90 cls.sv|leadingzero.sv|significand.sv|exponent.sv|unpackermaster.sv|tb_unpackermaster.sv|
+!i113 1
+Z10 tCvgOpt 0
+vCLS
+R1
+Z11 !s110 1731574124
+!i10b 1
+!s100 SIIz:_Fh;Fb=;TYjmT>NJ2
+R3
+IW6Rd7j]ZK[ZcJ4UKLC`DF1
+R4
+S1
+R0
+w1731518649
+8CLS.sv
+FCLS.sv
+!i122 141
 R5
 R6
 r1
 !s85 0
 31
-Z12 !s108 1731599017.000000
-!s107 tb_unpackermaster.sv|unpackermaster.sv|exponent.sv|significand.sv|leadingzero.sv|cls.sv|
-Z13 !s90 cls.sv|leadingzero.sv|significand.sv|exponent.sv|unpackermaster.sv|tb_unpackermaster.sv|
+Z12 !s108 1731574124.000000
+Z13 !s107 tb_UnpackerMaster.sv|UnpackerMaster.sv|exponent.sv|Unpacker.sv|leadingzero.sv|CLS.sv|
+Z14 !s90 CLS.sv|leadingzero.sv|Unpacker.sv|exponent.sv|UnpackerMaster.sv|tb_UnpackerMaster.sv|
 !i113 1
 R10
+n@c@l@s
 vDec
 R1
-Z14 !s110 1731422647
+Z15 !s110 1731422647
 !i10b 1
 !s100 _ffHo]hhOfmazm>3D89Q01
 R3
@@ -77,15 +77,63 @@ R6
 r1
 !s85 0
 31
-Z15 !s108 1731422647.000000
-Z16 !s107 tb_Dec.sv|Dec.sv|
-Z17 !s90 Dec.sv|tb_Dec.sv|
+Z16 !s108 1731422647.000000
+Z17 !s107 tb_Dec.sv|Dec.sv|
+Z18 !s90 Dec.sv|tb_Dec.sv|
 !i113 1
 R10
 n@dec
+vexceptions
+R1
+Z19 !s110 1732107718
+!i10b 1
+!s100 jhTA5?n]md]PePz1hW5ng0
+R3
+I=TJNV?D2U7Okm6L]B;J1n0
+R4
+S1
+R0
+w1732107430
+8exceptions.sv
+Fexceptions.sv
+!i122 147
+Z20 L0 1 19
+R6
+r1
+!s85 0
+31
+Z21 !s108 1732107718.000000
+Z22 !s107 tb_exceptions.sv|exceptions.sv|
+Z23 !s90 exceptions.sv|tb_exceptions.sv|
+!i113 1
+R10
+vexceptions_tb
+R1
+R19
+!i10b 1
+!s100 YSGN8M_LgAWi7P8k?^F?Q2
+R3
+INm]^f8][f83Ih`3Ig2IYV0
+R4
+S1
+R0
+w1732107715
+8tb_exceptions.sv
+Ftb_exceptions.sv
+!i122 147
+L0 1 24
+R6
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 1
+R10
 vexponent
 R1
-R11
+R2
 !i10b 1
 !s100 YW2?Lmg6;<HQH4HD;AV;;3
 R3
@@ -102,14 +150,62 @@ R6
 r1
 !s85 0
 31
-R12
-Z18 !s107 tb_unpackermaster.sv|unpackermaster.sv|exponent.sv|significand.sv|leadingzero.sv|cls.sv|
-R13
+R7
+R8
+R9
+!i113 1
+R10
+vexpsub
+R1
+Z24 !s110 1732729261
+!i10b 1
+!s100 MVXC?V`3AFWegM79=[F4:3
+R3
+InoLFWVMD`c?O>?;FDXN611
+R4
+S1
+R0
+w1732727994
+8expsub.sv
+Fexpsub.sv
+!i122 158
+R20
+R6
+r1
+!s85 0
+31
+Z25 !s108 1732729261.000000
+Z26 !s107 tb_expsub.sv|expsub.sv|
+Z27 !s90 expsub.sv|tb_expsub.sv|
+!i113 1
+R10
+vexpsub_tb
+R1
+!s110 1732727685
+!i10b 1
+!s100 b8Wz@zIo@<7GT<fobJiWT3
+R3
+I5PcQl`KXEjcE[XJL;ZP4a3
+R4
+S1
+R0
+w1732727644
+Z28 8tb_expsub.sv
+Z29 Ftb_expsub.sv
+!i122 152
+L0 1 27
+R6
+r1
+!s85 0
+31
+!s108 1732727685.000000
+R26
+R27
 !i113 1
 R10
 vHDec
 R1
-Z19 !s110 1731407659
+Z30 !s110 1731407659
 !i10b 1
 !s100 leWIDKzCF2WOR;bc@oHn31
 R3
@@ -121,20 +217,20 @@ w1731358514
 8HDec.sv
 FHDec.sv
 !i122 15
-Z20 L0 1 25
+Z31 L0 1 25
 R6
 r1
 !s85 0
 31
-Z21 !s108 1731407659.000000
-Z22 !s107 tb_HDec.sv|HDec.sv|
-Z23 !s90 HDec.sv|tb_HDec.sv|
+Z32 !s108 1731407659.000000
+Z33 !s107 tb_HDec.sv|HDec.sv|
+Z34 !s90 HDec.sv|tb_HDec.sv|
 !i113 1
 R10
 n@h@dec
 vHDecJ
 R1
-Z24 !s110 1731421156
+Z35 !s110 1731421156
 !i10b 1
 !s100 lI1_cZY7nTH6K_d84Bj[32
 R3
@@ -151,15 +247,15 @@ R6
 r1
 !s85 0
 31
-Z25 !s108 1731421156.000000
-Z26 !s107 tb_HDecJ.sv|HDecJ.sv|
-Z27 !s90 HDecJ.sv|tb_HDecJ.sv|
+Z36 !s108 1731421156.000000
+Z37 !s107 tb_HDecJ.sv|HDecJ.sv|
+Z38 !s90 HDecJ.sv|tb_HDecJ.sv|
 !i113 1
 R10
 n@h@dec@j
 vleadingzero
 R1
-R11
+R2
 !i10b 1
 !s100 8hOeninl5WjOZT75AUmYM3
 R3
@@ -176,14 +272,110 @@ R6
 r1
 !s85 0
 31
-R12
-R18
-R13
+R7
+R8
+R9
+!i113 1
+R10
+vlimit
+R1
+Z39 !s110 1732730632
+!i10b 1
+!s100 8h68^RP4INR4>WTmOkBKD3
+R3
+IdVH2hG27lYb8j<8mj8=XI3
+R4
+S1
+R0
+w1732730623
+8limit.sv
+Flimit.sv
+!i122 168
+R20
+R6
+r1
+!s85 0
+31
+Z40 !s108 1732730632.000000
+!s107 limit_tb.sv|limit.sv|ortree.sv|
+Z41 !s90 ortree.sv|limit.sv|limit_tb.sv|
+!i113 1
+R10
+vlimit_tb
+R1
+R39
+!i10b 1
+!s100 dMk04Y`WYk^_Ba[N7lYD?2
+R3
+I0fX=WZkHMfa>j8;20AzoD2
+R4
+S1
+R0
+w1732730367
+8limit_tb.sv
+Flimit_tb.sv
+!i122 168
+L0 1 40
+R6
+r1
+!s85 0
+31
+R40
+Z42 !s107 limit_tb.sv|limit.sv|ortree.sv|
+R41
+!i113 1
+R10
+vortree
+R1
+R39
+!i10b 1
+!s100 Jn@_U@LZKF8c;MjTT=`Kb2
+R3
+IHzifA;5891FME3ZPUe5FM1
+R4
+S1
+R0
+w1732729880
+8ortree.sv
+Fortree.sv
+!i122 168
+L0 1 28
+R6
+r1
+!s85 0
+31
+R40
+R42
+R41
+!i113 1
+R10
+vortree_tb
+R1
+!s110 1732729888
+!i10b 1
+!s100 >o850jzVY4Kol:_<23VFM2
+R3
+I3;=^JiM0Ea8[K9F=KOPT63
+R4
+S1
+R0
+w1732729558
+8ortree_tb.sv
+Fortree_tb.sv
+!i122 162
+L0 1 35
+R6
+r1
+!s85 0
+31
+!s108 1732729888.000000
+!s107 ortree_tb.sv|ortree.sv|
+!s90 ortree.sv|ortree_tb.sv|
 !i113 1
 R10
 vsignificand
 R1
-R11
+R2
 !i10b 1
 !s100 k9WGcDG^c;ONnf@:QBEn31
 R3
@@ -200,9 +392,9 @@ R6
 r1
 !s85 0
 31
-R12
-R18
-R13
+R7
+R8
+R9
 !i113 1
 R10
 vtb_CLS
@@ -232,7 +424,7 @@ R10
 ntb_@c@l@s
 vtb_Dec
 R1
-R14
+R15
 !i10b 1
 !s100 GBfK9oRR1QoHka6Ki6aHU2
 R3
@@ -244,20 +436,44 @@ w1731422644
 8tb_Dec.sv
 Ftb_Dec.sv
 !i122 19
-R20
+R31
 R6
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !i113 1
 R10
 ntb_@dec
+vtb_expsub
+R1
+R24
+!i10b 1
+!s100 HBH3Zc;6zXPJ[WjgJzzfL3
+R3
+IHeeXV12KS7^<DI6MC_TC11
+R4
+S1
+R0
+w1732728428
+R28
+R29
+!i122 158
+Z43 L0 1 34
+R6
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R10
 vtb_HDec
 R1
-R19
+R30
 !i10b 1
 !s100 4Lz`4EKBgjIJ4kmchm<g30
 R3
@@ -269,20 +485,20 @@ w1731358557
 8tb_HDec.sv
 Ftb_HDec.sv
 !i122 15
-R20
+R31
 R6
 r1
 !s85 0
 31
-R21
-R22
-R23
+R32
+R33
+R34
 !i113 1
 R10
 ntb_@h@dec
 vtb_HDecJ
 R1
-R24
+R35
 !i10b 1
 !s100 M6=B<`[`Pzi;O`DMAaf`:1
 R3
@@ -294,14 +510,14 @@ w1731406733
 8tb_HDecJ.sv
 Ftb_HDecJ.sv
 !i122 17
-L0 1 34
+R43
 R6
 r1
 !s85 0
 31
-R25
-R26
-R27
+R36
+R37
+R38
 !i113 1
 R10
 ntb_@h@dec@j
@@ -354,34 +570,9 @@ r1
 !i113 1
 R10
 ntb_@unpacker
-vtb_UnpackerMaster
-R1
-R2
-!i10b 1
-!s100 6c=mJB1611j=:MJMGccB90
-R3
-IlZ>3D=QYXWJbC=kLAknR32
-R4
-S1
-R0
-w1731574107
-8tb_UnpackerMaster.sv
-Ftb_UnpackerMaster.sv
-!i122 141
-Z28 L0 2 85
-R6
-r1
-!s85 0
-31
-R7
-R8
-R9
-!i113 1
-R10
-ntb_@unpacker@master
 vtb_unpackermaster
 R1
-R11
+R2
 !i10b 1
 !s100 6ceoMR7KMLg<9heB04O_81
 R3
@@ -393,19 +584,44 @@ w1731583716
 8tb_unpackermaster.sv
 Ftb_unpackermaster.sv
 !i122 145
-R28
+Z44 L0 2 85
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vtb_UnpackerMaster
+R1
+R11
+!i10b 1
+!s100 6c=mJB1611j=:MJMGccB90
+R3
+IlZ>3D=QYXWJbC=kLAknR32
+R4
+S1
+R0
+w1731574107
+8tb_UnpackerMaster.sv
+Ftb_UnpackerMaster.sv
+!i122 141
+R44
 R6
 r1
 !s85 0
 31
 R12
-R18
 R13
+R14
 !i113 1
 R10
+ntb_@unpacker@master
 vUnpacker
 R1
-R2
+R11
 !i10b 1
 !s100 H9A_CS@^:DQeGRQU0c8dC1
 R3
@@ -422,40 +638,15 @@ R6
 r1
 !s85 0
 31
-R7
-R8
-R9
+R12
+R13
+R14
 !i113 1
 R10
 n@unpacker
-vUnpackerMaster
-R1
-R2
-!i10b 1
-!s100 k8J:9ne]1@k>mP6FjEe2P0
-R3
-I?2HeL@<`gab8BFY>h:kU[2
-R4
-S1
-R0
-w1731572435
-8UnpackerMaster.sv
-FUnpackerMaster.sv
-!i122 141
-Z29 L0 1 36
-R6
-r1
-!s85 0
-31
-R7
-R8
-R9
-!i113 1
-R10
-n@unpacker@master
 vunpackermaster
 R1
-R11
+R2
 !i10b 1
 !s100 7E785`kbO<zCJF5i>RKo;0
 R3
@@ -467,13 +658,38 @@ w1731583727
 8unpackermaster.sv
 Funpackermaster.sv
 !i122 145
-R29
+Z45 L0 1 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vUnpackerMaster
+R1
+R11
+!i10b 1
+!s100 k8J:9ne]1@k>mP6FjEe2P0
+R3
+I?2HeL@<`gab8BFY>h:kU[2
+R4
+S1
+R0
+w1731572435
+8UnpackerMaster.sv
+FUnpackerMaster.sv
+!i122 141
+R45
 R6
 r1
 !s85 0
 31
 R12
-R18
 R13
+R14
 !i113 1
 R10
+n@unpacker@master

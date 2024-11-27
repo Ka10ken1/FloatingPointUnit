@@ -1,0 +1,926 @@
+$date
+	Wed Nov 27 22:04:14 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module limit_tb $end
+$var parameter 32 ! N $end
+$var reg 11 " as [10:0] $end
+$var reg 1 # eb_gt_ea $end
+$var wire 1 $ as2 [5] $end
+$var wire 1 % as2 [4] $end
+$var wire 1 & as2 [3] $end
+$var wire 1 ' as2 [2] $end
+$var wire 1 ( as2 [1] $end
+$var wire 1 ) as2 [0] $end
+$var integer 32 * i $end
+
+$scope module uut $end
+$var wire 1 + as [10] $end
+$var wire 1 , as [9] $end
+$var wire 1 - as [8] $end
+$var wire 1 . as [7] $end
+$var wire 1 / as [6] $end
+$var wire 1 0 as [5] $end
+$var wire 1 1 as [4] $end
+$var wire 1 2 as [3] $end
+$var wire 1 3 as [2] $end
+$var wire 1 4 as [1] $end
+$var wire 1 5 as [0] $end
+$var wire 1 6 eb_gt_ea $end
+$var reg 6 7 as2 [5:0] $end
+$var reg 11 8 as1 [10:0] $end
+$var reg 1 9 or1 $end
+
+$scope module or_tr $end
+$var parameter 32 : N $end
+$var wire 1 ; ea [4] $end
+$var wire 1 < ea [3] $end
+$var wire 1 = ea [2] $end
+$var wire 1 > ea [1] $end
+$var wire 1 ? ea [0] $end
+$var reg 1 @ orres $end
+
+$scope begin recursive_case $end
+$var reg 1 A or1 $end
+$var reg 1 B or2 $end
+
+$scope module higher $end
+$var parameter 0 C N $end
+$var wire 1 ; ea [2] $end
+$var wire 1 < ea [1] $end
+$var wire 1 = ea [0] $end
+$var reg 1 D orres $end
+
+$scope begin recursive_case $end
+$var reg 1 E or1 $end
+$var reg 1 F or2 $end
+
+$scope module higher $end
+$var parameter 0 G N $end
+$var wire 1 ; ea [1] $end
+$var wire 1 < ea [0] $end
+$var reg 1 H orres $end
+
+$scope begin recursive_case $end
+$var reg 1 I or1 $end
+$var reg 1 J or2 $end
+
+$scope module higher $end
+$var parameter 0 K N $end
+$var wire 1 ; ea [0] $end
+$var reg 1 L orres $end
+
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+
+$scope module lower $end
+$var parameter 0 M N $end
+$var wire 1 < ea [0] $end
+$var reg 1 N orres $end
+
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module lower $end
+$var parameter 0 O N $end
+$var wire 1 = ea [0] $end
+$var reg 1 P orres $end
+
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module lower $end
+$var parameter 0 Q N $end
+$var wire 1 > ea [1] $end
+$var wire 1 ? ea [0] $end
+$var reg 1 R orres $end
+
+$scope begin recursive_case $end
+$var reg 1 S or1 $end
+$var reg 1 T or2 $end
+
+$scope module higher $end
+$var parameter 0 U N $end
+$var wire 1 > ea [0] $end
+$var reg 1 V orres $end
+
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+
+$scope module lower $end
+$var parameter 0 W N $end
+$var wire 1 ? ea [0] $end
+$var reg 1 X orres $end
+
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0#
+b0 7
+b0 8
+09
+0@
+0A
+0B
+0D
+0E
+0F
+0H
+0I
+0J
+0L
+0N
+0P
+0R
+0S
+0T
+0V
+0X
+b1011 !
+b101 :
+r3 C
+r2 Q
+r2 G
+r1 O
+r1 U
+r1 W
+r1 K
+r1 M
+b0 *
+0)
+0(
+0'
+0&
+0%
+0$
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+06
+0?
+0>
+0=
+0<
+0;
+$end
+#10
+b1 *
+b1 "
+1#
+15
+16
+b11111111110 8
+b111110 7
+1(
+1'
+1&
+1%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+b111111 7
+1)
+#20
+b10 *
+b10 "
+05
+14
+b11111111101 8
+b111101 7
+0(
+#30
+b11 *
+b11 "
+15
+b11111111100 8
+#40
+b100 *
+b100 "
+05
+04
+13
+b11111111011 8
+b111011 7
+1(
+0'
+#50
+b101 *
+b101 "
+15
+b11111111010 8
+#60
+b110 *
+b110 "
+05
+14
+b11111111001 8
+b111001 7
+0(
+#70
+b111 *
+b111 "
+0#
+15
+06
+b111 8
+b111 7
+1(
+1'
+0&
+0%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+#80
+b1000 *
+b1000 "
+1#
+05
+04
+03
+12
+16
+b11111110111 8
+b110111 7
+1%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+#90
+b1001 *
+b1001 "
+15
+b11111110110 8
+#100
+b1010 *
+b1010 "
+0#
+05
+14
+06
+b1010 8
+b1011 7
+0'
+1&
+0%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+b1010 7
+0)
+#110
+b1011 *
+b1011 "
+1#
+15
+16
+b11111110100 8
+b110100 7
+0(
+1'
+0&
+1%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+b110101 7
+1)
+#120
+b1100 *
+b1100 "
+05
+04
+13
+b11111110011 8
+b110011 7
+1(
+0'
+#130
+b1101 *
+b1101 "
+0#
+15
+06
+b1101 8
+b1101 7
+0(
+1'
+1&
+0%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+#140
+b1110 *
+b1110 "
+1#
+05
+14
+16
+b11111110001 8
+b110001 7
+0'
+0&
+1%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+#150
+b1111 *
+b1111 "
+0#
+15
+06
+b1111 8
+b1111 7
+1(
+1'
+1&
+0%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+#160
+b10000 *
+b10000 "
+1#
+05
+04
+03
+02
+11
+16
+b11111101111 8
+b101111 7
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+#170
+b10001 *
+b10001 "
+0#
+15
+06
+b10001 8
+b10001 7
+0(
+0'
+0&
+1%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+#180
+b10010 *
+b10010 "
+1#
+05
+14
+16
+b11111101101 8
+b101101 7
+1'
+1&
+0%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+#190
+b10011 *
+b10011 "
+15
+b11111101100 8
+#200
+b10100 *
+b10100 "
+0#
+05
+04
+13
+06
+b10100 8
+b10101 7
+0&
+1%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+b10100 7
+0)
+#210
+b10101 *
+b10101 "
+1#
+15
+16
+b11111101010 8
+b101010 7
+1(
+0'
+1&
+0%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+b101011 7
+1)
+#220
+b10110 *
+b10110 "
+0#
+05
+14
+06
+b10110 8
+b10111 7
+1'
+0&
+1%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+b10110 7
+0)
+#230
+b10111 *
+b10111 "
+15
+b10111 8
+b10111 7
+1)
+#240
+b11000 *
+b11000 "
+05
+04
+03
+12
+b11000 8
+b11000 7
+0)
+0(
+0'
+1&
+#250
+b11001 *
+b11001 "
+1#
+15
+16
+b11111100110 8
+b100110 7
+1(
+1'
+0&
+0%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+b100111 7
+1)
+#260
+b11010 *
+b11010 "
+0#
+05
+14
+06
+b11010 8
+b11011 7
+0'
+1&
+1%
+0$
+0?
+0>
+0=
+0<
+0;
+0L
+0N
+0P
+0V
+0X
+0T
+0S
+0F
+0J
+0I
+0H
+0R
+0B
+0E
+0D
+0A
+0@
+09
+b11010 7
+0)
+#270
+b11011 *
+b11011 "
+1#
+15
+16
+b11111100100 8
+b100100 7
+0(
+1'
+0&
+0%
+1$
+1?
+1>
+1=
+1<
+1;
+1L
+1N
+1P
+1V
+1X
+1T
+1S
+1F
+1J
+1I
+1H
+1D
+1R
+1B
+1A
+1E
+1@
+19
+b100101 7
+1)
+#280
+b11100 *
+b11100 "
+05
+04
+13
+b11111100011 8
+b100011 7
+1(
+0'
+#290
+b11101 *
+b11101 "
+15
+b11111100010 8
+#300
+b11110 *
+b11110 "
+05
+14
+b11111100001 8
+b100001 7
+0(
