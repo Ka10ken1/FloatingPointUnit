@@ -1,4 +1,4 @@
-`include "../ftaddrec.sv"
+// `include "../ftaddrec.sv"
 module tb_fdaddrec;
 
   parameter n = 58;

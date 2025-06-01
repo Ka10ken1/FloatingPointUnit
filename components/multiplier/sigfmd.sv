@@ -1,4 +1,4 @@
-`include "./../../utils/ortree.sv"
+// `include "./../../utils/ortree.sv"
 
 module sigfmd (
     input [52:0]      fa,        
@@ -12,7 +12,7 @@ module sigfmd (
 wire [56:0] fq_mul;
 wire [56:0] fq_div;
 
-div_logic div_inst (
+div_logic divis (
     .fa(fa),
     .fb(fb),
     .db(db),
@@ -20,7 +20,7 @@ div_logic div_inst (
     .fq(fq_div)
 );
 
-mul_logic mul_inst (
+mul_logic mult (
     .fa(fa),
     .fb(fb),
     .fq(fq_mul)

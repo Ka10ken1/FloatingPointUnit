@@ -1,4 +1,4 @@
-`include "./../andtree.sv"
+// `include "./../andtree.sv"
 
 module tb_andtree;
 

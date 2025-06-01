@@ -1,4 +1,4 @@
-`include "./../specfprnd.sv"
+// `include "./../specfprnd.sv"
 
 module tb_specfrpnd;
     reg s;

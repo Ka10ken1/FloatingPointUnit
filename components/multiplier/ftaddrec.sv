@@ -15,7 +15,7 @@ wire [115:0] partials1 [npof-1:0];
 
 genvar j;
 generate
-    for (j = 0; j < npof; j = j + 1) begin
+    for (j = 0; j < npof; j = j + 1) begin : outer_for
         assign partials1[j] = (j < n) ? partials[j] : 0;
     end
 endgenerate
@@ -38,7 +38,7 @@ if (npof > 4) begin
 
     assign carry[0] = 0;
 
-    for (i = 0; i < 116; i = i + 1) begin
+    for (i = 0; i < 116; i = i + 1) begin : outer_1
         wire [1:0] sum5 = sum1[i] + sum2[i] + sum3[i];
         assign sum[i] = sum5[0];
         assign carry[i+1] = sum5[1];
@@ -48,7 +48,7 @@ if (npof > 4) begin
 
     assign t[0] = 0;
 
-    for (i = 0; i < 115; i = i + 1) begin
+    for (i = 0; i < 115; i = i + 1) begin : outer_2
         wire [1:0] sum6 = sum[i] + carry[i] + sum4[i];
         assign s[i] = sum6[0];
         assign t[i+1] = sum6[1];
@@ -60,7 +60,7 @@ end else begin : Base
 
     assign carry[0] = 0;
 
-    for (i = 0; i < 116; i = i + 1) begin
+    for (i = 0; i < 116; i = i + 1) begin : outer_3
         wire [1:0] sum5 = partials1[0][i] + partials1[1][i] + partials1[2][i];
         assign sum[i] = sum5[0];
         assign carry[i+1] = sum5[1];
@@ -69,8 +69,8 @@ end else begin : Base
     assign sum[116] = 0;
 
     assign t[0] = 0;
-
-    for (i = 0; i < 115; i = i + 1) begin
+ 
+    for (i = 0; i < 115; i = i + 1) begin : outer_4
         wire [1:0] sum6 = sum[i] + carry[i] + partials1[3][i];
         assign s[i] = sum6[0];
         assign t[i+1] = sum6[1];

@@ -1,4 +1,4 @@
-`include "./../cls.sv"
+// `include "./../cls.sv"
 module tb_CLS;
 
 
@@ -17,9 +17,10 @@ module tb_CLS;
     reg u;
 
     initial begin
+        integer i;
         u = 0;
         m = 6'b000110;
-        for (int i = 0; i < N; i++) begin
+        for (i = 0; i < N; i = i +1) begin
             x = i;  
             #10;   
         end  

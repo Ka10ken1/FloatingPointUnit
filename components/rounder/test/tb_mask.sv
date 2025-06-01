@@ -1,4 +1,4 @@
-`include "./../mask.sv"
+// `include "./../mask.sv"
 
 module tb_mask;
 

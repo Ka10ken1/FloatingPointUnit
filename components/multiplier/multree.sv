@@ -1,4 +1,4 @@
-`include "./../../utils/add.sv"
+// `include "./../../utils/add.sv"
 
 module multree(
     input  [57:0]        a,
@@ -13,14 +13,14 @@ wire [115:0] t,s;
 
 genvar i, j;
 generate
-  for (i = 0; i < 58; i++) begin
+  for (i = 0; i < 58; i=i+1) begin : outer_for
     assign temp[i][115:58] = 0;
-    for (j = 0; j < 58; j++) begin
+    for (j = 0; j < 58; j=j+1) begin : inline_for
       assign temp[i][j] = a[i] & b[j];
     end
   end
 
-  for(i=0; i < 58; i++) begin
+  for(i=0; i < 58; i=i+1) begin : outer_for_2
     assign partials[i] = temp[i] << i;
   end
 endgenerate

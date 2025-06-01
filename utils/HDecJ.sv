@@ -3,9 +3,10 @@ module HDecJ #(
     parameter npof2 = 2 ** $clog2(N)
 )(
     input  [N-1:0] x, 
-    output reg [2**N-1:0] y  
+    output [(2**npof2)-1:0] y  
 );
     wire [npof2-1:0] padded_x;
+ 
     assign padded_x = { {npof2 - N{1'b0}}, x };
 
     reg [npof2/2-1:0] x1;
@@ -34,7 +35,7 @@ module HDecJ #(
             for (i = 0; i < 2**npof2; i = i + 1) begin : gen_indices
                 localparam IL = i % (2**(npof2/2));
                 localparam IH = i / (2**(npof2/2));
-                assign y[i] = (IH == 0) ? (U[0] | V[IL]) : (U[IH] | (U[IH-1] & V[IL]));
+                assign y[i] = ~IH ? (U[0] | V[IL]) : (U[IH] | (U[IH-1] & V[IL]));
             end
 
         end

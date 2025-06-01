@@ -9,7 +9,7 @@ module adjexp(
 );
 
 wire [10:0] in;
-wire [7:0] emax1alpha;
+wire [10:0] emax1alpha;
 wire out;
 
 assign in = db ? e2[10:0] : {3'b111, e2[7:0]};

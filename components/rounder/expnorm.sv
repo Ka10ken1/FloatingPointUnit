@@ -1,5 +1,5 @@
-`include "./../../utils/three2add.sv"
-`include "./../../utils/add.sv"
+// `include "./../../utils/three2add.sv"
+// `include "./../../utils/add.sv"
 
 module expnorm(
     input [10:0] er,

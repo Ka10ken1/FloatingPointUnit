@@ -1,4 +1,4 @@
-`include "./../leadingzero.sv"
+// `include "./../leadingzero.sv"
 
 module tb_leadingzero;
 

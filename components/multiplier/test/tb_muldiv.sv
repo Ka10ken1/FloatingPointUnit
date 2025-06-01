@@ -1,4 +1,4 @@
-`include "./../muldiv.sv"
+// `include "./../muldiv.sv"
 
 module tb_muldiv;
 

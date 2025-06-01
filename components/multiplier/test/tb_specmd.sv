@@ -1,4 +1,4 @@
-`include "./../specmd.sv"
+// `include "./../specmd.sv"
 module tb_specmd;
 
     reg [52:0] nan;

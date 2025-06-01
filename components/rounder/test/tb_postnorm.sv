@@ -1,4 +1,4 @@
-`include "./../postnorm.sv"
+// `include "./../postnorm.sv"
 
 module tb_postnorm;
 

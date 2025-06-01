@@ -1,4 +1,4 @@
-`include "./../flags.sv"
+// `include "./../flags.sv"
 
 module tb_flags;
 

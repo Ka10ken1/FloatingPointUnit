@@ -1,4 +1,4 @@
-`include "./../expnorm.sv"
+// `include "./../expnorm.sv"
 
 module tb_expnorm;
     reg [10:0] er;

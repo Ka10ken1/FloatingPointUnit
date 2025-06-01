@@ -111,7 +111,7 @@ rounder rnd_add(
     .flr(fls),
     .RM(RM),
     .IEEEp(IEEp_add),
-    .fp(fp_add_out)
+    .fp(fp_add_out),
     // .sp_out(sp_add_out),
     // .ep_out(ep_add_out),
     // .f_out(f_add_out)
@@ -128,7 +128,7 @@ rounder rnd_mul(
     .flr(flq),
     .RM(RM),
     .IEEEp(IEEp_mul),
-    .fp(fp_mul_out)
+    .fp(fp_mul_out),
     // .sp_out(sp_mul_out),
     // .ep_out(ep_mul_out),
     // .f_out(f_mul_out)

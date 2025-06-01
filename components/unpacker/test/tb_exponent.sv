@@ -1,4 +1,4 @@
-`include "./../exponent.sv"
+// `include "./../exponent.sv"
 
 module tb_exponent;
 reg [63:0] fp;

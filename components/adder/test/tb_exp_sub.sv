@@ -1,4 +1,4 @@
-`include "./../exp_sub.sv"
+// `include "./../exp_sub.sv"
 module tb_exp_sub;
 
   reg [10:0] ea;

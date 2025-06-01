@@ -1,4 +1,4 @@
-`include "./../HDec.sv"
+// `include "./../HDec.sv"
 module tb_HDec;
 
     parameter N = 3;  
@@ -11,7 +11,8 @@ module tb_HDec;
     );
 
     initial begin
-        for (int i = 0; i < 2**N; i++) begin
+        int i;
+        for (i = 0; i < 2**N; i = i + 1) begin
             x = i;  
             #50;   
         end

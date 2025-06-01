@@ -1,5 +1,5 @@
-`include "./../../utils/ortree.sv"
-`include "./../../utils/HDecJ.sv"
+// `include "./../../utils/ortree.sv"
+// `include "./../../utils/HDecJ.sv"
 
 module mask(
     input  [12:0] sh,
@@ -11,7 +11,7 @@ wire w1;
 
 wire [11:0] t;
 wire [5:0] shp;
-wire [63:0] h;
+wire [255:0] h;
 wire [63:0] u;
 
 assign t = sh[11] ? ~sh[11:0] : sh[11:0];
